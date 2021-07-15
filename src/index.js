@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createStore} from 'redux'
+import B from './reducer/B'
+import C from './components/C'
 
+const store = createStore(B);
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <C />
   </React.StrictMode>,
   document.getElementById('root')
 );
